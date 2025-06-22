@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body.blog-page {
+            background: #181f2a;
+            color: #fff;
+        }
+        .blog-section {
+            max-width: 900px;
+            margin: 60px auto 40px auto;
+            padding: 32px 24px;
+            background: #232b3a;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px 0 #000a;
+        }
+        .blog-section h2 {
+            text-align: center;
+            color: #4ea1ff;
+            margin-bottom: 36px;
+            font-size: 2.5rem;
+        }
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .blog-post {
+            display: flex;
+            flex-direction: row;
+            background: #1a2233;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px 0 #0005;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .blog-post:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 6px 24px 0 #0007;
+        }
+        .blog-img {
+            width: 220px;
+            min-width: 180px;
+            object-fit: cover;
+            height: 180px;
+            background: #222;
+        }
+        .blog-content {
+            padding: 24px 28px 18px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .blog-post h3 {
+            color: #4ea1ff;
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+        }
+        .blog-meta {
+            font-size: 0.95rem;
+            color: #b0c4e6;
+            margin-bottom: 12px;
+        }
+        .blog-post p {
+            color: #e6eaf3;
+            margin: 0;
+        }
+        @media (max-width: 700px) {
+            .blog-post { flex-direction: column; }
+            .blog-img { width: 100%; height: 160px; }
+            .blog-content { padding: 18px 14px; }
+        }
+    </style>
+</head>
+<body class="blog-page">
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="cv.pdf" download>Download CV</a>
+        </div>
+    </nav>
+    <section class="blog-section">
+        <h2>Design Blog</h2>
+        <div class="blog-list">
+            <article class="blog-post">
+                <img class="blog-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Minimalism in Design">
+                <div class="blog-content">
+                    <h3>The Power of Minimalism in Design</h3>
+                    <p class="blog-meta">June 2025 | by Yeasin Mridha</p>
+                    <p>Minimalism is more than just a trend—it's a philosophy that helps designers focus on what truly matters. By removing unnecessary elements, you can create designs that are both beautiful and functional. Learn how to embrace white space, simple color palettes, and clear typography for maximum impact.</p>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img class="blog-img" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Color Theory">
+                <div class="blog-content">
+                    <h3>Color Theory: Making Your Designs Pop</h3>
+                    <p class="blog-meta">June 2025 | by Yeasin Mridha</p>
+                    <p>Understanding color theory is essential for every designer. Discover how to use complementary, analogous, and triadic color schemes to create visually appealing and harmonious designs. Explore tips for choosing the right colors for branding and digital products.</p>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img class="blog-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Typography Tips">
+                <div class="blog-content">
+                    <h3>Typography Tips for Modern Designers</h3>
+                    <p class="blog-meta">June 2025 | by Yeasin Mridha</p>
+                    <p>Typography can make or break your design. Learn how to pair fonts, set hierarchy, and use spacing effectively. This post covers the basics of font selection, line height, and letter spacing to help your text look clean and professional.</p>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img class="blog-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Portfolio Building">
+                <div class="blog-content">
+                    <h3>Building a Standout Portfolio</h3>
+                    <p class="blog-meta">June 2025 | by Yeasin Mridha</p>
+                    <p>Your portfolio is your personal brand. Get tips on how to showcase your best work, write compelling case studies, and present your skills to potential clients or employers. A well-crafted portfolio can open doors to new opportunities.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Creative Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
