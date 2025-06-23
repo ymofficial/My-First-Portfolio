@@ -493,13 +493,65 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  .hero h1 {
-    font-size: 1.3rem;
+  body {
+    font-size: 15px;
   }
-  .portfolio-card .card-title {
+  .navbar {
+    padding: 10px 4px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .nav-links a {
+    padding: 12px 10px;
     font-size: 1rem;
   }
-  .blog-section h2 {
-    font-size: 1.3rem;
+  .hero-content {
+    padding: 18px 2px;
+  }
+  .hero-photo {
+    width: 80px;
+    height: 80px;
+  }
+  .hero h1 {
+    font-size: 1.1rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .about-content, .work, .contact-content, .blog-section {
+    padding: 10px 2px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .portfolio-card img {
+    height: 120px;
+  }
+  .portfolio-card .card-title {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+  .skills {
+    gap: 6px;
+  }
+  .skill-bar {
+    height: 14px;
+  }
+  .contact-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-item p {
+    font-size: 0.95rem;
+  }
+  .social-links a {
+    font-size: 1.2rem;
+    margin: 0 4px;
+  }
+  footer p {
+    font-size: 0.9rem;
   }
 }
