@@ -411,26 +411,95 @@ footer {
   .portfolio-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .nav-links {
+    font-size: 1rem;
+    gap: 10px;
+  }
 }
 @media (max-width: 700px) {
-    .nav-cv-dropdown { display: block; margin: 8px 0; }
-    .nav-cv-dropdown > a { width: 100%; display: block; }
-    .cv-dropdown-list { left: 0; min-width: 100px; }
-}
-@media (max-width: 600px) {
-  nav.navbar {
+  .navbar {
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 1rem;
+    align-items: flex-start;
+    padding: 18px 10px;
   }
-  .portfolio-grid {
-    grid-template-columns: 1fr;
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0;
+    display: none;
+    background: #181f2a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 24px 0 #0007;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 16px 24px;
+    width: 100%;
+    border-bottom: 1px solid #232b3a;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 101;
+  }
+  .hamburger span {
+    height: 3px;
+    width: 28px;
+    background: #4ea1ff;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 700px) {
+  .hero-content {
+    padding: 30px 10px;
   }
   .hero-photo {
     width: 110px;
     height: 110px;
   }
-  .about, .work, .contact {
-    padding: 2rem 0 1rem 0;
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .about-content, .work, .contact-content, .blog-section {
+    padding: 18px 6px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .portfolio-card img {
+    height: 180px;
+  }
+  .skills {
+    gap: 10px;
+  }
+  .skill-bar {
+    height: 18px;
+  }
+  .contact-content {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .portfolio-card .card-title {
+    font-size: 1rem;
+  }
+  .blog-section h2 {
+    font-size: 1.3rem;
   }
 }
